@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center Drink</title>
+    <link rel="shortcun icon" href="../imagenes/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/bfa459edf7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos/estilos.css" />
+</head>
+
+<body class="container-fluid body--bg">
+
+    <!-- Comienzo del header -->
+
+    <header class="container-fluid header--bg d-flex justify-content-between">
+        <section class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center col-7">
+                <a class="col-7" href="./index.html"><img class="col-12" src="../imagenes/logo-center-drink.png"
+                        alt="Logo Center Drink" /></a>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-lg align-items-end col-5 pe-2">
+            <div class="container-fluid padding d-flex justify-content-end">
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-flex justify-content-end"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link blanco text-end" href="../index.html">Inicio</a>
+                        <a class="nav-link blanco text-end" href="./nosotros.html">Nosotros</a>
+                        <a class="nav-link blanco text-end" href="./productos.html">Nuestros productos</a>
+                        <a class="nav-link blanco text-end" href="./pedidos.html">Pedidos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Fin del header -->
+    <!-- Comienzo main -->
+
+    <main class="container-fluid padding">
+        <div class="container text-center footer-bg rounded-3 bordes">
+            <p class="blanco">Para consultas o pedidos debes comunicarte por WhatsApp o llamadas telefónicas al número
+                3533468524.<br />
+                <span class="desaparece">Horarios de atención: Lunes a Sábados de 8 a 12 por la mañana y de 16 a 20 por
+                    la tarde/noche.</span>
+            </p>
+        </div>
+        <section class="d-flex align-items-center justify-content-between">
+            <div class="col-4">
+                <p class="footer-bg blanco bordes3 rounded-3 text-end pe-2">También puedes llenar este formulario <br />y nos pondremos en contacto
+                    usted lo antes posible.</p>
+            </div>
+            <div class="col-8 d-flex justify-content-end pb-4">
+                <div class="footer-bg p-4 rounded-3 bordes2">
+                    <form action="" method="get" enctype="multipart/form-data">
+                        <div class="blanco">COMPLETA EL FORMULARIO CON TUS DATOS:</div>
+                        <div>
+                            <label class="blanco formulario--texto" for="nombre">Nombre:</label>
+                            <input class="rosa negrobkg" type="text" id="nombre" name="nombre"
+                                placeholder="Nombre..." />
+                        </div>
+                        <div>
+                            <label class="blanco formulario--texto" for="apellido">Apellido:</label>
+                            <input class="rosa negrobkg" type="text" id="apellido" name="apellido"
+                                placeholder="Apellido..." />
+                        </div>
+                        <div>
+                            <label class="blanco formulario--texto" for="correo-electronico">Correo electrónico:</label>
+                            <input class="rosa negrobkg" type="email" id="correo-electronico" name="correo-electronico"
+                                placeholder="Correo electrónico..." />
+                        </div>
+                        <div>
+
+                            <legend class="blanco formulario--texto">Selecciona tu Sexo:</legend>
+                            <label class="blanco" for="hombre">Hombre</label>
+                            <input type="radio" name="sexo" value="hombre" id="hombre" />
+                            <label class="blanco" for="mujer">Mujer</label>
+                            <input type="radio" name="sexo" value="mujer" id="mujer" />
+                            <label class="blanco" for="otro">Otro</label>
+                            <input type="radio" name="sexo" value="otro" id="otro">
+                        </div>
+                        <div>
+                            <label class="blanco formulario--texto" for="pais">Selecciona tu pais</label>
+                            <select class="rosa negrobkg" name="pais" id="pais">
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Colombia">Colombia</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="blanco mediano">Acepto recibir correos electrónicos con publicidad y noticias
+                                sobre Center
+                                Drink.</label>
+                            <input class="mediano" type="checkbox" name="acepto" value="1" />
+                        </div>
+                        <div>
+                            <label class="blanco" for="comentario">Agrega cualquier información adicional que creas
+                                relevante:</label>
+                        </div>
+                        <div>
+                            <textarea class="rosa negrobkg" name="comentario" id="comentario" cols="49" rows="3"
+                                placeholder="Informacion adicional..."></textarea>
+                        </div>
+                        <div class="contenedor__botones">
+                            <button class="botones" type="submit">Enviar</button>
+                            <button class="botones" type="reset">Resetar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Fin del main -->
+    <!-- Comienzo del footer -->
+
+    <footer class="container-fluid footer-bg d-flex justify-content-between">
+
+        <!-- Comienzo del contenedor 1 del footer -->
+
+        <section class="col-4 col-sm-6 d-flex d-none d-sm-block">
+            <article class="d-flex">
+                <div class="col-6 d-flex justify-content-center">
+                    <img class="col-6 py-2" src="../imagenes/logo-center-drink.png" alt="Logo Center Drink" />
+                </div>
+                <div class="col-6 d-none d-lg-block pt-5">
+                    <div class="col-12 d-flex align-items-center">
+                        <div class="col-2">
+                            <img class="col-12" src="../imagenes/reloj.png" alt="icono Reloj" />
+                        </div>
+                        <div class="col-10">
+                            <p class="footer--texto col-12 blanco">
+                                <span class="gris">HORARIOS DE ATENCIÓN</span> <br />De Lunes a
+                                Jueves:<br />
+                                8:30 a 12:30 - 16:30 a 20:30 <br />De Viernes a Sábado:<br />
+                                8:30 a 12:30 - 16:30 a 03:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- ******************** -->
+        <!-- Comienzo del contenedor 2 del footer -->
+        <section class="col-7 col-sm-6 d-flex align-items-center justify-content-end">
+            <div class="col-10 d-flex justify-content-end px-2">
+                <p class="gris"><span>MANTENTE EN CONTACTO</span></p>
+            </div>
+            <div class="col-2 d-flex flex-column">
+                <a class="col-4 d-flex justify-content-center"
+                    href="https://wa.me/5493533401785/?text=Hola%20Center%20Drink!">
+                    <img class="col-12 py-2" src="../imagenes/whatsapp.png" alt="Whatsapp icono" target="_blank"
+                        rel="noopener noreferrer" />
+                </a>
+                <a class="col-4 d-flex justify-content-center" href="https://www.instagram.com/center.drink/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="col-12 py-2" src="../imagenes/instagram.png" alt="Instagram icono" />
+                </a>
+                <a class="col-4 d-flex justify-content-center" href="tel:+5493533401785">
+                    <img class="col-12 py-2" src="../imagenes/telefono.png" alt="Telefono icono" />
+                </a>
+            </div>
+        </section>
+    </footer>
+    <!-- Fin del footer -->
+
+
+</body>
+
+</html>

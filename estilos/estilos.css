@@ -1,0 +1,315 @@
+* {
+    font-family: 'Poppins';
+}
+
+/* BODY */
+
+.padding {
+    padding: 0;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(26, 26, 26);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FF50BA;
+    border-radius: 5px;
+}
+
+
+.body--bg {
+    background-image: linear-gradient(99deg, rgb(41, 41, 41) 10.6%, rgb(0, 0, 0) 118%);
+    padding: 0;
+}
+
+/* HEADER */
+
+.header--bg {
+    background-image: rgb(255, 255, 255);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 64%);
+    padding: 0;
+}
+
+.navbar-nav a:hover {
+    color:#FF50BA ;
+}
+
+/* MAIN */
+
+/* Tamaños de texto */
+.grande {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.p--grande {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 95%;
+}
+
+.formulario--texto {
+    color: white;
+    font-size: 25px;
+}
+
+.p--chico {
+    line-height: 110%;
+    font-weight: 300;
+    padding-top: 1%;
+}
+
+/* Paleta de colores */
+
+.blanco {
+    color: white;
+    text-decoration: none;
+}
+
+
+.rosa {
+    color: #FF50BA;
+}
+
+.gris {
+        color: rgb(85, 85, 85);
+        font-weight: 500;
+        text-decoration: none;
+}
+
+.gris:hover {
+    color: #FF50BA;
+}
+
+/* Bloque 3 Seccion 2 */
+
+.article__img {
+    padding: 11.5% 0%;
+}
+
+/* Footer */
+
+i {
+    color: white;
+    font-size: 40px;
+}
+
+.footer-bg {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 0;
+}
+
+.footer--texto {
+    line-height: 105%;
+    padding: 0px 0px 0px 10px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* productos.html */
+
+.productos__section2--bg {
+    background: rgb(227, 227, 227);
+    background: linear-gradient(90deg, rgba(227, 227, 227, 0) 2%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 75%, rgba(74, 74, 74, 0) 98%);
+}
+
+.productos__section2--bg h1 {
+    font-weight: 700;
+    color: rgb(85, 85, 85);
+}
+
+/* Tarjetas */
+
+.tarjetas__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    padding-bottom: 40px;
+    justify-items: center;
+}
+
+.tarjeta {
+    width: 245px;
+    height: 410px;
+    background-color: #d4d4d4;
+    border-radius: 18px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, .7), 0 17px 17px 0 rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.botellas {
+    width: 50%;
+}
+
+.tarjeta h4 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: #7F7F7F;
+    align-self: flex-end;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.tarjeta__contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 75%;
+}
+
+.tarjeta__contenedor2 {
+    background: rgb(22, 22, 22);
+    width: 100%;
+    height: 25%;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+}
+
+.tarjeta__contenedor2 p {
+    color: #3E3E3E;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.tarjeta__contenedor2 strong {
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.rosa {
+    color: #FF50BA;
+}
+
+.verde {
+    color: #aee23f;
+}
+
+.azul {
+    color: #4185E4;
+}
+
+.contenedor2__bloque1 {
+    width: 100%;
+    height: 65%;
+    padding-top: 10px;
+}
+
+.contenedor2__bloque2 {
+    display: flex;
+    width: 100%;
+    height: 45%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contenedor2__bloque2 span {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 8px;
+    padding-right: 15px;
+}
+
+/* pedidos.html */
+
+.bordes {
+    border-right: solid 1px #FF50BA;
+    border-left: solid 1px #FF50BA;
+}
+
+.bordes2 {
+    border-left: solid 1px #FF50BA;
+    border-top: solid 1px #FF50BA;
+
+}
+
+.bordes3 {
+    border-right: solid 1px #FF50BA;
+
+    border-top: solid 1px #FF50BA;
+}
+
+.botones {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins';
+    border: solid 1px rgb(31, 31, 31);
+    margin: 0px 5px;
+}
+
+.botones:hover {
+    background-color: white;
+    color: #FF50BA;
+    border-left: solid 1px #FF50BA;
+    border-right: solid 1px #FF50BA;
+}
+
+/* Media querys tarjetas__grid */
+
+@media (max-width:992px) {
+    .tarjetas__grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        column-gap: 0px;
+        row-gap: 50px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .tarjetas__grid {
+    column-gap: 30px;
+    }
+
+    .productos__section2--bg h1 {
+        font-weight: 700;
+        color: rgb(85, 85, 85);
+        font-size: 25px;
+    }
+}
+
+@media (max-width:577px) {
+    .tarjetas__grid {
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:545px) {
+    .productos__section2--bg h1 {
+
+        color: rgb(85, 85, 85);
+        font-size: 20px;
+    }
+}
+
+@media (max-width:370px) {
+    .p--grande {
+        font-size: 25px;
+    }
+
+    .p--grandegrande {
+        font-size: 25px;
+    }
+}
+    
+
+
+
+
+
+
