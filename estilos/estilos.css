@@ -230,18 +230,6 @@ i {
     border-left: solid 1px #FF50BA;
 }
 
-.bordes2 {
-    border-left: solid 1px #FF50BA;
-    border-top: solid 1px #FF50BA;
-
-}
-
-.bordes3 {
-    border-right: solid 1px #FF50BA;
-
-    border-top: solid 1px #FF50BA;
-}
-
 .botones {
     border-radius: 10px;
     padding: 10px;
@@ -269,6 +257,11 @@ i {
         row-gap: 50px;
         padding-bottom: 40px;
     }
+
+    .formulario--texto {
+        color: white;
+        font-size: 20px;
+    }
 }
 
 @media (max-width:768px) {
@@ -294,6 +287,11 @@ i {
 
         color: rgb(85, 85, 85);
         font-size: 20px;
+    }
+
+    .formulario--texto {
+        color: white;
+        font-size: 16px;
     }
 }
 
