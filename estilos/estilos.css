@@ -158,6 +158,11 @@ i:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    transition: transform 0.5s ease-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
 }
 
 .botellas {
