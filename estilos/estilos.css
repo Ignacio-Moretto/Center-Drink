@@ -91,6 +91,10 @@ body::-webkit-scrollbar-thumb {
     padding: 11.5% 0%;
 }
 
+.hidden {
+    overflow: hidden;
+}
+
 /* Footer */
 
 i {
