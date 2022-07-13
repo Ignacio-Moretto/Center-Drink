@@ -1,0 +1,23 @@
+.main__section__article {
+    color:white;
+
+    &__p1 {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 95%;
+
+        &__span {
+            color: $rosa;
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 95%;
+            font-weight: 700;
+        }
+    }
+
+    &__p2 {
+        line-height: 110%;
+        font-weight: 300;
+        padding-top: 1%;
+    }
+}

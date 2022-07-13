@@ -1,0 +1,22 @@
+{
+  "name": "center-drink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ignacio-Moretto/Center-Drink.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ignacio-Moretto/Center-Drink/issues"
+  },
+  "homepage": "https://github.com/Ignacio-Moretto/Center-Drink#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
