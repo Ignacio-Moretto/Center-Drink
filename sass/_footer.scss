@@ -1,4 +1,11 @@
-i {
+$redesSociales: (
+    instagram: $rosa,
+    whatsapp: $verde,
+    telefono: $azul,
+);
+
+@each $nombre, $color in $redesSociales {
+    .link--#{$nombre} {
     color: white;
     font-size: 35px;
     padding: 20% 0;
@@ -6,8 +13,10 @@ i {
     transition: transform 0.4s ease-out;
 
     &:hover {
-        color: $rosa;
+        color: $color;
         transform: scale(1.2);
+    }
+
     }
 }
 

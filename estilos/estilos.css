@@ -31,6 +31,10 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
 }
 
+.navbar-nav a {
+    color: white;
+}
+
 .navbar-nav a:hover {
     color:#FF50BA ;
 }

@@ -5,19 +5,20 @@
         font-size: 35px;
         font-weight: 500;
         line-height: 95%;
+        margin: 0;
 
-        &__span {
+        &__h1 {
             color: $rosa;
             font-size: 35px;
             font-weight: 500;
             line-height: 95%;
             font-weight: 700;
+            margin: 0;
         }
     }
 
     &__p2 {
         line-height: 110%;
         font-weight: 300;
-        padding-top: 1%;
     }
 }
