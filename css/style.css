@@ -197,6 +197,25 @@ a {
 .botellas {
   width: 50%; }
 
+.bordes {
+  border-right: solid 1px #FF50BA;
+  border-left: solid 1px #FF50BA; }
+
+.botones {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-family: 'Poppins';
+  border: solid 1px #1f1f1f;
+  margin: 0px 5px; }
+
+.botones:hover {
+  background-color: white;
+  color: #FF50BA;
+  border-left: solid 1px #FF50BA;
+  border-right: solid 1px #FF50BA; }
+
 @media (max-width: 370px) {
   .main__section__article__p1 {
     font-size: 25px; } }
