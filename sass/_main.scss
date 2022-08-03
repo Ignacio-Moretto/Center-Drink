@@ -1,3 +1,28 @@
+.main__section2 {
+    display: flex;
+    justify-content: space-around;
+    &__article1 {
+        @extend .main__section2__articles
+    }
+    &__article2 {
+        @extend .main__section2__articles
+    }
+    &__article3 {
+        @extend .main__section2__articles
+    }
+}
+
+.main__section2__articles {
+    width: 30%;
+    text-align: center;
+}
+
+.main__section3 {
+    display: flex;
+}
+
+
+
 .main__section__article {
     color:white;
 
@@ -21,4 +46,12 @@
         line-height: 110%;
         font-weight: 300;
     }
+}
+
+.padding {
+    padding: 0;
+}
+
+.wave {
+    width: 100%;
 }
