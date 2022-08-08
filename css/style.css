@@ -131,7 +131,8 @@ a {
     display: flex;
     flex-direction: column; }
     .nosotros__section2__article--texto {
-      padding: 0; }
+      padding: 0;
+      text-align: end; }
 
 /* Comienzo productos.html */
 .productos__section {
@@ -337,6 +338,6 @@ a {
   .main__section3__article--imagen {
     width: 315px; }
   .nosotros__section__article--imagen {
-    width: 320px; }
+    width: 300px; }
   .nosotros__section2__article--imagen {
-    width: 320px; } }
+    width: 300px; } }
