@@ -1,0 +1,32 @@
+.nosotros__contenedores__sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.nosotros__section {
+    @extend .nosotros__contenedores__sections;
+    justify-items: end;
+    &__article {
+
+        &--imagen {
+            width: 500px;
+            padding-top: 5px;
+        }
+    }   
+}
+
+.nosotros__section2 {
+    @extend .nosotros__contenedores__sections;
+    justify-content: start;
+    &__article {
+        display: flex;
+        flex-direction: column;
+
+        &--texto {
+            padding: 0;
+        }
+    }
+}

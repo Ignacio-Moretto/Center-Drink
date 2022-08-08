@@ -112,6 +112,27 @@ a {
   .footer .telefono {
     font-size: 30px; }
 
+.nosotros__contenedores__sections, .nosotros__section, .nosotros__section2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 5px; }
+
+.nosotros__section {
+  justify-items: end; }
+  .nosotros__section__article--imagen {
+    width: 500px;
+    padding-top: 5px; }
+
+.nosotros__section2 {
+  justify-content: start; }
+  .nosotros__section2__article {
+    display: flex;
+    flex-direction: column; }
+    .nosotros__section2__article--texto {
+      padding: 0; }
+
 /* Comienzo productos.html */
 .productos__section {
   background: rgba(0, 0, 0, 0.2);
@@ -233,6 +254,12 @@ a {
   border-left: solid 1px #FF50BA;
   border-right: solid 1px #FF50BA; }
 
+@media (max-width: 1200px) {
+  .nosotros__section__article--imagen {
+    width: 450px; }
+  .nosotros__section2__article--imagen {
+    width: 450px; } }
+
 @media (max-width: 1144px) {
   .main__section3__article--imagen {
     width: 500px; } }
@@ -242,6 +269,25 @@ a {
     width: 450px; }
   .main__section3__article--imagen {
     width: 450px; } }
+
+@media (max-width: 1000px) {
+  .nosotros__section__article--imagen {
+    width: 400px; }
+  .nosotros__section2__article--imagen {
+    width: 400px; } }
+
+@media (max-width: 991px) {
+  .nosotros__contenedores__sections, .nosotros__section, .nosotros__section2 {
+    grid-template-columns: 1fr; }
+  .nosotros__section {
+    justify-items: center;
+    text-align: center; }
+  .nosotros__section2__article--texto {
+    padding: 1rem; }
+  .nosotros__section2 {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center; } }
 
 @media (max-width: 930px) {
   .main__section__article--imagen {
@@ -279,10 +325,18 @@ a {
 
 @media (max-width: 470px) {
   .main__section3__article--imagen {
-    width: 370px; } }
+    width: 370px; }
+  .nosotros__section__article--imagen {
+    width: 350px; }
+  .nosotros__section2__article--imagen {
+    width: 350px; } }
 
 @media (max-width: 370px) {
   .main__section__article__p1 {
     font-size: 25px; }
   .main__section3__article--imagen {
-    width: 315px; } }
+    width: 315px; }
+  .nosotros__section__article--imagen {
+    width: 320px; }
+  .nosotros__section2__article--imagen {
+    width: 320px; } }
