@@ -1,16 +1,16 @@
 /* Comienzo productos.html */
-@mixin background($fondo) {
-    background: $fondo;
-}
 
 .productos__section {
-    @include background(rgba(0, 0, 0, 0.2));
     border-radius: 15px;
     margin-bottom: 10px;
+    
+    &__article {
+        justify-content: flex-end;
+    }
 }
 
 .productos__section2 {
-    @include background(linear-gradient(90deg, rgba(227, 227, 227, 0) 2%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 75%, rgba(74, 74, 74, 0) 98%));
+    background-color: #fff;
 
     &--h1 {
         font-weight: 700;
@@ -19,7 +19,6 @@
 }
 
 .productos__section3 {
-    @include background(rgba(0, 0, 0, 0.5));
     border-radius: 15px;
     margin-top: 10px;
 
