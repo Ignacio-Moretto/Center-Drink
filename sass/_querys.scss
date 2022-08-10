@@ -117,6 +117,13 @@
     .main__section__article--imagen {
         width: 290px;
     }
+
+    textarea {
+        width: 80%;
+    }
+    .input {
+        width: 65%;
+    }
 }
 
 @media (max-width: 575px) {
@@ -158,5 +165,13 @@
 
     .nosotros__section2__article--imagen {
         width: 300px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
     }
 }

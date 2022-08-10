@@ -273,6 +273,9 @@ a {
   font-size: 16px;
   margin: 0; }
 
+.input {
+  width: 35%; }
+
 input {
   border-radius: 15px;
   border-style: none;
@@ -290,7 +293,8 @@ select {
 textarea {
   border-style: none;
   border-radius: 15px;
-  background-color: #ececec; }
+  background-color: #ececec;
+  width: 50%; }
   textarea:focus {
     outline: none; }
 
@@ -369,7 +373,11 @@ textarea {
 
 @media (max-width: 670px) {
   .main__section__article--imagen {
-    width: 290px; } }
+    width: 290px; }
+  textarea {
+    width: 80%; }
+  .input {
+    width: 65%; } }
 
 @media (max-width: 575px) {
   .main__section__article {
@@ -393,4 +401,8 @@ textarea {
   .nosotros__section__article--imagen {
     width: 300px; }
   .nosotros__section2__article--imagen {
-    width: 300px; } }
+    width: 300px; }
+  textarea {
+    width: 100%; }
+  .input {
+    width: 100%; } }
