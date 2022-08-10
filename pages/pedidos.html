@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="distribuidor, bebidas, las varillas, distribuidora, logistica, transporte" />
-    <meta name="description" content="Estamos aquí para responderte. Hacé preguntas, obtené respuestas, ayuda y más de nuestros servicios">
+    <meta name="description"
+        content="Estamos aquí para responderte. Hacé preguntas, obtené respuestas, ayuda y más de nuestros servicios">
     <title>Center Drink - Pedidos y contacto</title>
     <link rel="shortcun icon" href="../imagenes/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,79 +57,125 @@
     <!-- Comienzo main -->
 
     <main class="container-fluid text-white padding pt-5">
-        <div class="container text-center footer rounded-3 bordes py-2">
-            <p class="blanco">Para consultas o pedidos debes comunicarte por WhatsApp o llamadas telefónicas al número
-                3533468524.<br />
-                <span class="desaparece">Horarios de atención: Lunes a Sábados de 8 a 12 por la mañana y de 16 a 20 por
-                    la tarde/noche.</span>
-            </p>
-        </div>
         <section class="d-flex flex-column align-items-center justify-content-center py-3">
-            <div class="col-8">
-                <p class="footer blanco bordes rounded-3 text-center pe-2">También puedes llenar este formulario <br />y nos pondremos en contacto
-                    usted lo antes posible.</p>
+            <div class="bg--textos text-center rounded-3 bordes mx-5 mb-2">
+                <p class="m-0 px-3">Para consultas o pedidos debes comunicarte por WhatsApp.<br />
+                    <span>Horarios de atención: Lunes a Sábados de 8 a 12 por la mañana y de 16 a 20 por
+                        la tarde/noche.</span>
+                </p>
             </div>
-            <div class="col-10 d-flex justify-content-center pb-4">
-                <div class="footer p-4 rounded-3 bordes container-fluid">
-                    <form action="" method="get" enctype="multipart/form-data">
-                        <div class="blanco">COMPLETA EL FORMULARIO CON TUS DATOS:</div>
-                        <div>
-                            <label class="blanco formulario--texto" for="nombre">Nombre:</label>
-                            <input class="rosa" type="text" id="nombre" name="nombre"
-                                placeholder="Nombre..." />
-                        </div>
-                        <div>
-                            <label class="blanco formulario--texto" for="apellido">Apellido:</label>
-                            <input class="rosa" type="text" id="apellido" name="apellido"
-                                placeholder="Apellido..." />
-                        </div>
-                        <div>
-                            <label class="blanco formulario--texto" for="correo-electronico">Correo electrónico:</label>
-                            <input class="rosa" type="email" id="correo-electronico" name="correo-electronico"
-                                placeholder="Correo electrónico..." />
-                        </div>
-                        <div>
 
-                            <legend class="blanco formulario--texto">Selecciona tu Sexo:</legend>
-                            <label class="blanco" for="hombre">Hombre</label>
-                            <input type="radio" name="sexo" value="hombre" id="hombre" />
-                            <label class="blanco" for="mujer">Mujer</label>
-                            <input type="radio" name="sexo" value="mujer" id="mujer" />
-                            <label class="blanco" for="otro">Otro</label>
-                            <input type="radio" name="sexo" value="otro" id="otro">
+            <div class="bg--textos text-center rounded-3 bordes col-8 d-flex justify-content-center mt-2">
+                <p class="m-0 px-3">También puedes llenar
+                    este formulario <br />para generar un mensaje automático de WhatsApp y realizar tu pedido.</p>
+            </div>
+        </section>
+
+        <!-- wave blanca -->
+        <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,63.66 C149.99,150.00 367.66,-0.47 501.41,113.00 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        <!-- wave blanca -->
+
+        <section class="bg-white py-4">
+            <div class="text-black bg--formulario rounded-3 p-4 mx-3">
+                <div class="container-fluid">
+                    <form action="" method="get" enctype="multipart/form-data">
+                        <div>
+                            <p class="main__form__p">COMPLETA EL FORMULARIO CON TUS DATOS:</p>
                         </div>
                         <div>
-                            <label class="blanco formulario--texto" for="pais">Selecciona tu pais</label>
-                            <select class="rosa" name="pais" id="pais">
-                                <option value="Argentina">Argentina</option>
-                                <option value="Brasil">Brasil</option>
-                                <option value="Chile">Chile</option>
-                                <option value="Uruguay">Uruguay</option>
-                                <option value="Colombia">Colombia</option>
+                            <label for="nombre">Nombre:</label>
+                            <input class="mb-1" type="text" id="nombre" name="nombre" placeholder="Nombre..." />
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido..." />
+                        </div>
+                        <div class="py-2">
+                            <legend>
+                                <p class="main__form__legend">Forma de entrega:</p>
+                            </legend>
+                            <label for="hombre">Delivery</label>
+                            <input type="radio" name="delivery" value="delivery" id="delivery" />
+                            <label for="mujer">En el local</label>
+                            <input type="radio" name="local" value="local" id="local" />
+                        </div>
+                        <div class="py-2">
+                            <label for="localidad">Selecciona tu localidad (si tu localidad no aparece en la lista,
+                                selecciona "Otra" y agrega esta información en el campo de información
+                                adicional):</label>
+                            <select name="localidad" id="localidad">
+                                <option value="Las Varillas">Las Varillas</option>
+                                <option value="Alicia">Alicia</option>
+                                <option value="El Fortín">El Fortín</option>
+                                <option value="Pozo del molle">Pozo del molle</option>
+                                <option value="Las Varas">Las Varas</option>
+                                <option value="Laspiur">Laspiur</option>
+                                <option value="La playosa">La playosa</option>
+                                <option value="Sacanta">Sacanta</option>
+                                <option value="Otra">Otra</option>
                             </select>
                         </div>
-                        <div>
-                            <label class="blanco ">Acepto recibir correos electrónicos con publicidad y noticias
-                                sobre Center
-                                Drink.</label>
+                        <div class="py-2">
+                            <label>Es tu primera compra en Center Drink?</label>
                             <input type="checkbox" name="acepto" value="1" />
                         </div>
-                        <div>
-                            <label class="blanco" for="comentario">Agrega cualquier información adicional que creas
-                                relevante:</label>
+                        <div class="pt-2">
+                            <label class="mb-1" for="localidad">Selecciona el tipo de bebida:</label>
+                            <select name="localidad" id="localidad">
+                                <option class="options" value="Vodka">Vodka</option>
+                                <option class="options" value="Gin">Gin</option>
+                                <option class="options" value="Fernet">Fernet</option>
+                                <option class="options" value="Cerveza">Cerveza</option>
+                                <option class="options" value="Vino">Vino</option>
+                                <option class="options" value="Gaseosa">Gaseosa</option>
+                                <option class="options" value="Jugo">Jugo</option>
+                                <option class="options" value="Energizante">Energizante</option>
+                            </select>
+                        </div>
+                        <div class="pb-2">
+                            <label for="localidad">Selecciona la cantidad de unidades:</label>
+                            <select name="localidad" id="localidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="mas">Más</option>
+                            </select>
+                        </div>
+                        <div class="py-2">
+                            <label for="comentario">Agrega información adicional (Tu localidad si no estaba en la lista,
+                                contenido neto de las unidades y cualquier información que creas relevante):</label>
                         </div>
                         <div>
-                            <textarea class="rosa" name="comentario" id="comentario" cols="25" rows="3"
-                                placeholder="Informacion adicional..."></textarea>
+                            <textarea name="comentario" id="comentario" cols="25" rows="3"
+                                placeholder="Información adicional..."></textarea>
                         </div>
                         <div class="contenedor__botones">
                             <button class="botones" type="submit">Enviar</button>
-                            <button class="botones" type="reset">Resetar</button>
+                            <button class="botones" type="reset">Borrar</button>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
+
+        <!-- wave blanca -->
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-54.46,-26.13 C149.99,150.00 271.49,-49.98 501.97,60.70 L500.00,0.00 L0.00,0.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+        <!-- wave blanca -->
+
+        <!-- Wave negra -->
+        <div style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-4.79,55.77 C242.37,156.42 349.20,-49.98 508.74,108.06 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgba(0, 0, 0, 0.5);"></path>
+            </svg></div>
+        <!-- Wave negra -->
+
     </main>
 
     <!-- Fin del main -->
@@ -164,12 +211,12 @@
         <!-- ******************** -->
         <!-- Comienzo del contenedor 2 del footer -->
 
-        <section class="col-7 col-sm-6 d-flex align-items-center justify-content-end">
-            <div class="col-10 d-flex justify-content-end px-2">
+        <section class="col-12 col-sm-6 d-flex align-items-center justify-content-between">
+            <div class="col-8 col-sm-10 d-flex justify-content-center px-2">
                 <p class=""><span class="footer__texto__span">MANTENTE EN CONTACTO</span></p>
             </div>
             <div class="col-2 d-flex flex-column align-items-center
-            justify-content-end">
+        justify-content-end">
                 <a href="https://wa.me/5493533401785/?text=Hola%20Center%20Drink!">
                     <i class="link--whatsapp fa-brands fa-whatsapp"></i>
                 </a>
