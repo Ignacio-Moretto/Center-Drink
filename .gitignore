@@ -2,3 +2,5 @@ node_modules/
 .vscode/
 respaldo.html
 respaldo-productos.html
+package-lock.json
+package.json
