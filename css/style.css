@@ -18,9 +18,44 @@ a {
   color: #555555;
   font-weight: 500;
   text-decoration: none;
+  animation: color;
   transition: color 0.4s ease-out; }
   a:hover {
     color: #FF50BA; }
+
+.haceTuPedido {
+  animation-name: pedido;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite; }
+
+@keyframes pedido {
+  0% {
+    transform: translate(0);
+    color: #555555; }
+  12% {
+    transform: translate(7px);
+    color: #FF50BA; }
+  25% {
+    transform: translate(0);
+    color: #555555; }
+  36% {
+    transform: translate(-5px);
+    color: #FF50BA; }
+  50% {
+    transform: translate(0);
+    color: #555555; }
+  62% {
+    transform: translate(5px);
+    color: #FF50BA; }
+  75% {
+    transform: translate(0);
+    color: #555555; }
+  87% {
+    transform: translate(-7px);
+    color: #FF50BA; }
+  100% {
+    transform: translate(0);
+    color: #555555; } }
 
 .header {
   background-image: white;
@@ -33,7 +68,7 @@ a {
     color: #FF50BA; }
 
 .navbar--button {
-  background-color: #3E3E3E;
+  background-color: #666666;
   transition: all 1s ease-out;
   font-size: 14px;
   border-radius: 15px; }
