@@ -387,9 +387,7 @@ textarea {
     justify-items: center;
     column-gap: 0px;
     row-gap: 50px;
-    padding-bottom: 40px; }
-  .haceTuPedido {
-    justify-content: center; } }
+    padding-bottom: 40px; } }
 
 @media (max-width: 930px) {
   .main__section__article--imagen {
@@ -435,7 +433,9 @@ textarea {
   .main__section__article {
     text-align: center; }
   .tarjetas__grid {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .haceTuPedido {
+    justify-content: center; } }
 
 @media (max-width: 470px) {
   .main__section3__article--imagen {
