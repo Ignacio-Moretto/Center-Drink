@@ -136,6 +136,15 @@
     color: $azul;
 }
 
+.botella-malbec {
+    @extend .contenedor2__bloque1;
+    color: $malbec;
+}
+
+.botella-cavernet {
+    @extend .contenedor2__bloque1;
+    color: $cavernet;
+}
 
 .botellas {
     width: 50%;
