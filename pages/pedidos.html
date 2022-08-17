@@ -82,32 +82,23 @@
         <section class="bg-white py-4">
             <div class="text-black bg--formulario rounded-3 p-4 mx-3">
                 <div class="container-fluid">
-                    <form action="" method="get" enctype="multipart/form-data">
+                    <form id="formulario">
                         <div>
                             <p class="main__form__p">COMPLETA EL FORMULARIO CON TUS DATOS:</p>
                         </div>
                         <div>
                             <label for="nombre">Nombre:</label>
-                            <input class="input mb-1" type="text" id="nombre" name="nombre" placeholder="Nombre..." />
+                            <input class="input mb-1" type="text" id="nombre" name="nombre" placeholder="Nombre..." required/>
                         </div>
                         <div>
-                            <label for="apellido">Apellido:</label>
-                            <input class="input" type="text" id="apellido" name="apellido" placeholder="Apellido..." />
-                        </div>
-                        <div class="py-2">
-                            <legend>
-                                <p class="main__form__legend">Forma de entrega:</p>
-                            </legend>
-                            <label for="delivery">Delivery</label>
-                            <input type="radio" name="delivery" value="delivery" id="delivery" />
-                            <label for="local">En el local</label>
-                            <input type="radio" name="local" value="local" id="local" />
+                            <label for="apellido">Apellidos:</label>
+                            <input class="input" type="text" id="apellidos" name="apellidos" placeholder="Apellido..." required/>
                         </div>
                         <div class="py-2">
                             <label for="localidad">Selecciona tu localidad (si tu localidad no aparece en la lista,
                                 selecciona "Otra" y agrega esta información en el campo de información
                                 adicional):</label>
-                            <select name="localidad" id="localidad">
+                            <select name="localidad" id="localidad" required>
                                 <option value="Las Varillas">Las Varillas</option>
                                 <option value="Alicia">Alicia</option>
                                 <option value="El Fortín">El Fortín</option>
@@ -119,44 +110,41 @@
                                 <option value="Otra">Otra</option>
                             </select>
                         </div>
-                        <div class="py-2">
-                            <label>Es tu primera compra en Center Drink?</label>
-                            <input type="checkbox" name="acepto" value="1" />
-                        </div>
                         <div class="pt-2">
-                            <label class="mb-1" for="localidad">Selecciona el tipo de bebida:</label>
-                            <select name="localidad" id="localidad">
-                                <option class="options" value="Vodka">Vodka</option>
-                                <option class="options" value="Gin">Gin</option>
-                                <option class="options" value="Fernet">Fernet</option>
-                                <option class="options" value="Cerveza">Cerveza</option>
-                                <option class="options" value="Vino">Vino</option>
-                                <option class="options" value="Gaseosa">Gaseosa</option>
-                                <option class="options" value="Jugo">Jugo</option>
-                                <option class="options" value="Energizante">Energizante</option>
+                            <label class="mb-1" for="tipo">Quiero realizar una compra para (el apartado "Mi <strong>compra mayorista</strong>" es para cliente que necesitan una cantidad grande de bebidas pero no son un emprendimiento o negocio de ventas.):</label>
+                            <select class="mb-1" name="tipo" id="tipo" required>
+                                <option class="options" value="Mi (cliente regular)">Mi (cliente regular)</option>
+                                <option class="options" value="Mi negocio, emprendimiento, etc.">Mi negocio, emprendimiento, etc.</option>
+                                <option class="options" value="Mi (compra mayorista)">Mi (compra mayorista)</option>
                             </select>
                         </div>
                         <div class="pb-2">
-                            <label for="localidad">Selecciona la cantidad de unidades:</label>
-                            <select name="localidad" id="localidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="mas">Más</option>
+                            <label for="entrega">Entrega: </label>
+                            <select name="entrega" id="entrega" required>
+                                <option value="En el local">En el local</option>
+                                <option value="Necesito que lo envíen/transporten">Necesito que lo envien/transporten</option>
                             </select>
                         </div>
+                        <div class="pb-2">
+                            <label for="pago">Metodo de pago: </label>
+                            <select name="pago" id="pago" required>
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                                <option value="Tarjeta de débito">Tarjeta de débito</option>
+                                <option value="Transferencia">Transferencia</option>
+                            </select>
+
+                        </div>
                         <div class="py-2">
-                            <label for="comentario">Agrega información adicional (Tu localidad si no estaba en la lista,
-                                contenido neto de las unidades y cualquier información que creas relevante):</label>
+                            <label for="comentario">Agrega información adicional (Tu localidad si no estaba en la lista
+                                o cualquier información que creas relevante):</label>
                         </div>
                         <div>
                             <textarea name="comentario" id="comentario" cols="25" rows="3"
                                 placeholder="Información adicional..."></textarea>
                         </div>
                         <div class="contenedor__botones">
-                            <button class="botones" type="submit">Enviar</button>
+                            <button class="botones" type="submit" id="submit">Enviar</button>
                             <button class="botones" type="reset">Borrar</button>
                         </div>
                     </form>
@@ -235,7 +223,7 @@
     </footer>
 
     <!-- Fin del footer -->
-
+<script src="../JavaScript/whatsapp.js"></script>
 </body>
 
 </html>
